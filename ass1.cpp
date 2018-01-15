@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
-using namespace std;
+#include <cstdlib>
+#include <unistd.h>
+
 int main()
 {
-	string pass;
-	cin>>pass;
+	std::string pass = getpass("Enter Password:");
 	if (pass.length() <= 6)
 	{
 		printf("Password too small\n");
